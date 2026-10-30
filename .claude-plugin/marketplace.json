@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "organiq",
-      "description": "Skills (quick wins, content decay, cannibalization, weekly report, AI traffic, GEO audit, site audit) plus the Organiq MCP connector for your own Google Search Console and GA4 data. Read-only.",
+      "description": "Skills (quick wins, content decay, cannibalization, weekly report, AI traffic, GEO audit, site audit) plus the Organiq MCP connector for your own Google Search Console and GA4 data. Read-only Google access.",
       "author": {
         "name": "Organiq"
       },
