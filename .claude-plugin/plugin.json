@@ -1,0 +1,22 @@
+{
+  "name": "organiq",
+  "displayName": "Organiq",
+  "version": "0.4.0",
+  "description": "Skills for analysing your own Google Search Console and GA4 data through the Organiq MCP connector: quick wins, content decay, cannibalization, weekly report, traffic from AI assistants, GEO audit and full site audit. Read-only; data stays in your Organiq account.",
+  "author": {
+    "name": "Organiq",
+    "url": "https://organiqgeo.com"
+  },
+  "homepage": "https://organiqgeo.com/docs",
+  "license": "Apache-2.0",
+  "keywords": [
+    "seo",
+    "geo",
+    "search-console",
+    "ga4",
+    "mcp"
+  ],
+  "repository": "https://github.com/organiqgeo/organiq-plugin",
+  "icon": ".claude-plugin/icon.png",
+  "privacyPolicyUrl": "https://organiqgeo.com/privacy"
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "organiq": {
+      "type": "http",
+      "url": "https://organiqgeo.com/mcp"
+    }
+  }
+}

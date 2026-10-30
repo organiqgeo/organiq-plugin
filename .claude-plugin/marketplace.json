@@ -1,0 +1,34 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "organiq",
+  "description": "Organiq: SEO and GEO analysis of your own Search Console and GA4 data through MCP.",
+  "owner": {
+    "name": "Organiq",
+    "email": "youssefpmat@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "organiq",
+      "description": "Skills (quick wins, content decay, cannibalization, weekly report, AI traffic, GEO audit, site audit) plus the Organiq MCP connector for your own Google Search Console and GA4 data. Read-only.",
+      "author": {
+        "name": "Organiq"
+      },
+      "category": "productivity",
+      "source": "./",
+      "homepage": "https://organiqgeo.com/docs",
+      "version": "0.4.0",
+      "keywords": [
+        "seo",
+        "geo",
+        "search-console",
+        "ga4",
+        "mcp"
+      ],
+      "license": "Apache-2.0"
+    }
+  ],
+  "metadata": {
+    "description": "Organiq marketplace: one plugin with the skills and the bundled MCP connector.",
+    "version": "0.4.0"
+  }
+}
