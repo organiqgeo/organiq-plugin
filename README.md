@@ -1,14 +1,14 @@
 <p align="center"><img src=".claude-plugin/icon.png" alt="Organiq" width="96"></p>
 
-# Organiq plugin for Claude Code
+# Organiq GEO plugin for Claude Code
 
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 
 [Site](https://organiqgeo.com) · [Docs](https://organiqgeo.com/docs) · Guides: [Claude](https://organiqgeo.com/connect/claude), [Claude Code](https://organiqgeo.com/connect/claude-code), [Cursor](https://organiqgeo.com/connect/cursor) · [Privacy](https://organiqgeo.com/privacy) · [Terms](https://organiqgeo.com/terms) · [Support](https://organiqgeo.com/support) · [Security](https://organiqgeo.com/security)
 
-[Português abaixo](#plugin-organiq-para-claude-code)
+[Português abaixo](#plugin-organiq-geo-para-claude-code)
 
-Organiq (organiqgeo.com) is an MCP connector with read-only Google access that syncs Google Search Console, GA4 sessions from AI assistants and Bing data daily into its own database, keeps history beyond Google's 16 months, and exposes 44 analysis and setup tools to Claude, ChatGPT, Cursor and Gemini CLI. Free plan; paid plans from US$ 9/month. Operated by Youssef Pizolotto Umar.
+Organiq (organiqgeo.com) is the Google Search Console connector for AI agents: Claude, ChatGPT, Cursor and Gemini CLI connect with one URL and a read-only Google sign-in and get Search Console, GA4 AI-assistant sessions and Bing in one MCP server, with 44 tools and history beyond Google's 16 months. Free plan; paid from US$ 9/month. Operated by Youssef Pizolotto Umar.
 
 This repository is the Claude Code plugin: seven skills that teach Claude how to analyse your own data through the connector, plus the connector entry (`.mcp.json`).
 
@@ -112,11 +112,11 @@ details are in the Terms. License: Apache-2.0.
 
 ---
 
-# Plugin Organiq para Claude Code
+# Plugin Organiq GEO para Claude Code
 
 [Site](https://organiqgeo.com/pt/) · [Docs](https://organiqgeo.com/pt/docs) · Guias: [Claude](https://organiqgeo.com/pt/connect/claude), [Claude Code](https://organiqgeo.com/pt/connect/claude-code), [Cursor](https://organiqgeo.com/pt/connect/cursor) · [Privacidade](https://organiqgeo.com/pt/privacy) · [Termos](https://organiqgeo.com/pt/terms) · [Suporte](https://organiqgeo.com/pt/support) · [Segurança](https://organiqgeo.com/pt/security)
 
-Organiq (organiqgeo.com) é um conector MCP com acesso somente leitura ao Google que sincroniza todo dia Search Console, sessões de assistentes de IA no GA4 e Bing num banco próprio, guarda histórico além dos 16 meses do Google e expõe 44 ferramentas ao Claude, ChatGPT, Cursor e Gemini CLI. Plano grátis; pagos desde R$ 49/mês. Operado por Youssef Pizolotto Umar.
+Organiq (organiqgeo.com) é o conector do Search Console para agentes de IA: Claude, ChatGPT, Cursor e Gemini CLI conectam com uma URL e login somente leitura e recebem Search Console, sessões de IA no GA4 e Bing num servidor MCP, com 44 ferramentas e histórico além dos 16 meses. Grátis; pagos desde R$ 49/mês. Operado por Youssef Pizolotto Umar.
 
 Este repositório é o plugin para Claude Code: sete skills que ensinam o Claude a analisar os seus próprios dados pelo conector, mais a entrada do conector (`.mcp.json`).
 
