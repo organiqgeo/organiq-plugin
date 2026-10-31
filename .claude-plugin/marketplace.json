@@ -16,7 +16,7 @@
       "category": "productivity",
       "source": "./",
       "homepage": "https://organiqgeo.com/docs",
-      "version": "0.4.0",
+      "version": "0.4.1",
       "keywords": [
         "seo",
         "geo",
@@ -29,6 +29,6 @@
   ],
   "metadata": {
     "description": "Organiq marketplace: one plugin with the skills and the bundled MCP connector.",
-    "version": "0.4.0"
+    "version": "0.4.1"
   }
 }
