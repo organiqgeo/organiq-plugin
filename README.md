@@ -10,7 +10,7 @@
 
 [Português abaixo](#plugin-organiq-geo-para-claude-code)
 
-Organiq (organiqgeo.com) is the Google Search Console connector for AI agents: Claude, ChatGPT, Cursor and Gemini CLI connect with one URL and a read-only Google sign-in and get Search Console, GA4 AI-assistant sessions and Bing in one MCP server, with 46 tools and history beyond Google's 16 months. Free plan; paid from US$ 9/month. Operated by Youssef Pizolotto Umar.
+Organiq (organiqgeo.com) is the Google Search Console connector for AI agents: Claude, ChatGPT, Cursor and Gemini CLI connect with one URL and a read-only Google sign-in and get Search Console, GA4 AI-assistant sessions and Bing in one MCP server, with 47 tools and history beyond Google's 16 months. Free plan; paid from US$ 9/month. Operated by Youssef Pizolotto Umar.
 
 This repository is the Claude Code plugin: seven skills that teach Claude how to analyse your own data through the connector, plus the connector entry (`.mcp.json`).
 
@@ -19,7 +19,7 @@ This repository is the Claude Code plugin: seven skills that teach Claude how to
 | | |
 |---|---|
 | Connector | `https://organiqgeo.com/mcp` (remote, Streamable HTTP) |
-| Tools | 46: 41 read tools and 5 tools that write only to Organiq; 3 work before sign-in (`get_capabilities`, `get_ctr_benchmark`, `check_connection`) |
+| Tools | 47: 42 read tools and 5 tools that write only to Organiq; 4 work before sign-in (`get_capabilities`, `get_ctr_benchmark`, `check_connection`, `check_ai_access`) |
 | Google access | Read-only. The read tools only read; the 5 tools that write change only Organiq data (linked GA4, Bing site and key, brand terms, indexing requests) and need the `mcp:write` scope. Nothing is written to Search Console, GA4 or Bing |
 | Authentication | OAuth 2.1 with Google sign-in; API key for clients without OAuth |
 | Data | Search Console, GA4 sessions from ChatGPT, Perplexity, Gemini, Copilot and Claude, Bing Webmaster, Core Web Vitals |
@@ -60,9 +60,9 @@ Settings → MCP → enable `organiq` and approve the sign-in window:
 
 Step-by-step guides, also for ChatGPT and Gemini CLI: `https://organiqgeo.com/docs`.
 
-## Tools (46: 41 read, 5 write to Organiq)
+## Tools (47: 42 read, 5 write to Organiq)
 
-- **Connection and discovery:** `get_capabilities`, `get_ctr_benchmark`, `check_connection`, `list_sites`
+- **Connection and discovery:** `get_capabilities`, `get_ctr_benchmark`, `check_connection`, `check_ai_access`, `list_sites`
 - **Performance:** `get_site_summary`, `get_timeseries`, `query_top_queries`, `query_top_pages`, `query_countries`, `query_devices`, `get_breakdown`, `breakdown_by_path`, `get_query_performance`, `get_page_performance`, `get_ranking_changes`, `get_position_distribution`, `get_branded_performance`, `get_longtail_clusters`, `get_annotations`
 - **Opportunities:** `get_ctr_curve`, `find_decaying_content`, `analyze_cannibalization`, `score_opportunities`, `find_page_poaching_opportunities`
 - **Statistics:** `detect_anomalies`, `detect_change_points`, `forecast_traffic`
@@ -97,7 +97,7 @@ claude plugin list                  # organiq@organiq enabled
 claude mcp list                     # organiq … Connected (after /mcp → Authenticate)
 ```
 
-In a session, `/mcp` shows the `organiq` server with 46 tools (41 read, 5 write to Organiq), and typing "quick wins for example.com"
+In a session, `/mcp` shows the `organiq` server with 47 tools (42 read, 5 write to Organiq), and typing "quick wins for example.com"
 loads the `quick-wins` skill.
 
 ## Data and privacy
@@ -119,7 +119,7 @@ details are in the Terms. License: Apache-2.0.
 
 [Site](https://organiqgeo.com/pt/) · [Docs](https://organiqgeo.com/pt/docs) · Guias: [Claude](https://organiqgeo.com/pt/connect/claude), [Claude Code](https://organiqgeo.com/pt/connect/claude-code), [Cursor](https://organiqgeo.com/pt/connect/cursor) · [Privacidade](https://organiqgeo.com/pt/privacy) · [Termos](https://organiqgeo.com/pt/terms) · [Suporte](https://organiqgeo.com/pt/support) · [Segurança](https://organiqgeo.com/pt/security)
 
-Organiq (organiqgeo.com) é o conector do Search Console para agentes de IA: Claude, ChatGPT, Cursor e Gemini CLI conectam com uma URL e login somente leitura e recebem Search Console, sessões de IA no GA4 e Bing num servidor MCP, com 46 ferramentas e histórico além dos 16 meses. Grátis; pagos desde R$ 49/mês. Operado por Youssef Pizolotto Umar.
+Organiq (organiqgeo.com) é o conector do Search Console para agentes de IA: Claude, ChatGPT, Cursor e Gemini CLI conectam com uma URL e login somente leitura e recebem Search Console, sessões de IA no GA4 e Bing num servidor MCP, com 47 ferramentas e histórico além dos 16 meses. Grátis; pagos desde R$ 49/mês. Operado por Youssef Pizolotto Umar.
 
 Este repositório é o plugin para Claude Code: sete skills que ensinam o Claude a analisar os seus próprios dados pelo conector, mais a entrada do conector (`.mcp.json`).
 
@@ -128,7 +128,7 @@ Este repositório é o plugin para Claude Code: sete skills que ensinam o Claude
 | | |
 |---|---|
 | Conector | `https://organiqgeo.com/mcp` (remoto, Streamable HTTP) |
-| Ferramentas | 46: 41 de leitura e 5 que gravam só no Organiq; 3 funcionam sem login (`get_capabilities`, `get_ctr_benchmark`, `check_connection`) |
+| Ferramentas | 47: 42 de leitura e 5 que gravam só no Organiq; 4 funcionam sem login (`get_capabilities`, `get_ctr_benchmark`, `check_connection`, `check_ai_access`) |
 | Acesso ao Google | Somente leitura. As ferramentas de leitura só leem; as 5 que gravam mudam só dados do Organiq (GA4 ligado, site e chave do Bing, termos de marca, pedidos de indexação) e exigem o escopo `mcp:write`. Nada é escrito no Search Console, no GA4 nem no Bing |
 | Autenticação | OAuth 2.1 com login Google; API key para clientes sem OAuth |
 | Dados | Search Console, sessões do GA4 vindas de ChatGPT, Perplexity, Gemini, Copilot e Claude, Bing Webmaster, Core Web Vitals |
@@ -169,9 +169,9 @@ Configurações → MCP → ative `organiq` e aprove a janela de login:
 
 Guias passo a passo, também para ChatGPT e Gemini CLI: `https://organiqgeo.com/pt/docs`.
 
-## Ferramentas (46: 41 de leitura, 5 gravam no Organiq)
+## Ferramentas (47: 42 de leitura, 5 gravam no Organiq)
 
-- **Conexão e descoberta:** `get_capabilities`, `get_ctr_benchmark`, `check_connection`, `list_sites`
+- **Conexão e descoberta:** `get_capabilities`, `get_ctr_benchmark`, `check_connection`, `check_ai_access`, `list_sites`
 - **Desempenho:** `get_site_summary`, `get_timeseries`, `query_top_queries`, `query_top_pages`, `query_countries`, `query_devices`, `get_breakdown`, `breakdown_by_path`, `get_query_performance`, `get_page_performance`, `get_ranking_changes`, `get_position_distribution`, `get_branded_performance`, `get_longtail_clusters`, `get_annotations`
 - **Oportunidades:** `get_ctr_curve`, `find_decaying_content`, `analyze_cannibalization`, `score_opportunities`, `find_page_poaching_opportunities`
 - **Estatística:** `detect_anomalies`, `detect_change_points`, `forecast_traffic`
@@ -206,7 +206,7 @@ claude plugin list                  # organiq@organiq habilitado
 claude mcp list                     # organiq … Connected (após /mcp → Authenticate)
 ```
 
-Numa sessão, `/mcp` mostra o servidor `organiq` com 46 ferramentas (41 de leitura, 5 gravam no Organiq), e escrever "quick wins do
+Numa sessão, `/mcp` mostra o servidor `organiq` com 47 ferramentas (42 de leitura, 5 gravam no Organiq), e escrever "quick wins do
 exemplo.com.br" carrega a skill `quick-wins`.
 
 ## Dados e privacidade
