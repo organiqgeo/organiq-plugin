@@ -4,7 +4,7 @@
 
 [![License: Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
 [![mcptry](https://mcptry.com/badge/com.organiqgeo/organiq)](https://mcptry.com/servers/com.organiqgeo/organiq)
-[![M8ven Verified](https://m8ven.ai/badge/mcp/organiqgeo/organiq-plugin?variant=verified)](https://m8ven.ai/mcp/organiqgeo/organiq-plugin?s=readme)
+[![M8ven Score](https://m8ven.ai/badge/mcp/organiqgeo-organiq-plugin-7e8kbc?v=421834c59020153422d438fe6a320f9a)](https://m8ven.ai/mcp/organiqgeo-organiq-plugin-7e8kbc?s=readme)
 
 [Site](https://organiqgeo.com) · [Docs](https://organiqgeo.com/docs) · Guides: [Claude](https://organiqgeo.com/connect/claude), [Claude Code](https://organiqgeo.com/connect/claude-code), [Cursor](https://organiqgeo.com/connect/cursor) · [Privacy](https://organiqgeo.com/privacy) · [Terms](https://organiqgeo.com/terms) · [Support](https://organiqgeo.com/support) · [Security](https://organiqgeo.com/security)
 
