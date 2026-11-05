@@ -80,11 +80,18 @@ For the candidates you consider in step 4 (not for every row), find the ranking 
 
 ## 4. Decide
 
-At most three page edits and one new page per cycle, one change per page. Excluded: pages changed less than 28 days ago, pages reverted in this cycle and queries under 10 impressions in 28 days (key queries excepted). For each candidate, the first rule that applies decides the change:
+At most three page edits and one new page per cycle, one change per page. Excluded: pages changed less than 28 days ago, pages reverted in this cycle and queries under 10 impressions in 28 days (key queries excepted). For each candidate, the first rule that applies decides the change.
+
+**Do not break what already works.** These limits apply to every rule below and win over them:
+- Before editing a page, read what it ranks for: `get_page_performance` `{site, page, days: 28, compare: "previous", counterparts: 20}`. Clicks at risk = the page's clicks in that window.
+- A page with clicks at risk keeps its title, H1, URL and first paragraph. It receives additions only, below the first paragraph: a section, a table, an answer block, links.
+- Title, meta description and first paragraph are rewritten only on a page at position 10 or better with CTR below 1%, where little traffic is at risk. The new text keeps the words of every query that brought the page a click or 20 or more impressions in the window.
+- Nothing that ranks is removed or shortened. Text is added or replaced, never deleted.
+- A change that cannot meet these limits is left out of the cycle and listed in the report.
 
 1. **Gaining query or page** (position better by 1 or more, or more clicks than the previous period): open the page in the repository and identify what it does that its siblings do not (title format, a direct answer near the top, a section, a table, structured data, internal links). Apply that pattern to sibling pages of the same section or template that rank worse for similar queries, and link the gaining page and the siblings to each other with descriptive anchors. On the gaining page itself, add links only.
 2. **Question-style or AI-style query with impressions**, on a page that does not answer it directly: add the question as an H2, then a 40–60-word answer that stands on its own (names the subject and gives the fact), then the detail. Use citable facts (figures with their date and source) that already exist on the site or that the user provides. Keep JSON-LD consistent with the visible text; add `FAQPage` only for questions and answers that are visible on the page.
-3. **Position 10 or better, CTR below the curve, 20 or more impressions**: rewrite the title, the meta description and the first paragraph so they contain the query (or its closest natural form) and state what the page delivers.
+3. **Position 10 or better, CTR below the curve, 20 or more impressions**: when the page's CTR is below 1%, rewrite the title, the meta description and the first paragraph so they contain the query (or its closest natural form) and state what the page delivers. Otherwise, add a section near the top that answers the query, leaving the title and first paragraph as they are.
 4. **Position 11–30, 10 or more impressions**: add a section that answers the query and two or three internal links to the page from pages that already get impressions, with anchor text close to the query.
 5. **Real cannibalization**: give each page a role. One page owns the query (the winner from the tool unless another page matches the intent better); the other keeps its own angle with a distinct title and H1; link them to each other, with the owner linked using the query as anchor. Do not delete pages, add redirects or change canonicals here; list those as suggestions in the report.
 6. **Key query with no page that owns it** (no impressions, or no page ranking in the top 30 and no matching page in the repository): create one new page.
@@ -124,7 +131,7 @@ Short, with the period next to every number:
 
 1. Data used: property, `dataTo`, the windows.
 2. Verdicts: page, target query, baseline → d+28, the site's change in the same window, verdict, action taken.
-3. Changes this cycle: page, target query, rule, baseline (impressions, position, CTR), what changed.
+3. Changes this cycle: page, target query, rule, baseline (impressions, position, CTR), what changed, clicks at risk and what could fall.
 4. Files touched, and the checks run with their result.
 5. What needs the user: deploy, missing facts, CMS-only pages, suggested redirects or canonicals, key query suggestions when the list is empty.
 6. Next cycle: the earliest date a change completes 14 days of data, that is the live date + 14 days plus about 3 days of Search Console lag (for pending rows: 17 days after the deploy).
