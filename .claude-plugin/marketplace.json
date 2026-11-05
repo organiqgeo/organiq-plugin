@@ -9,14 +9,14 @@
   "plugins": [
     {
       "name": "organiq",
-      "description": "Skills (quick wins, content decay, cannibalization, weekly report, AI traffic, GEO audit, site audit) plus the Organiq MCP connector for your own Google Search Console and GA4 data. Read-only Google access.",
+      "description": "Skills (quick wins, content decay, cannibalization, weekly report, AI traffic, GEO audit, site audit, optimization cycle) plus the Organiq MCP connector for your own Google Search Console and GA4 data. Read-only Google access.",
       "author": {
         "name": "Organiq"
       },
       "category": "productivity",
       "source": "./",
       "homepage": "https://organiqgeo.com/docs",
-      "version": "0.4.2",
+      "version": "0.5.0",
       "keywords": [
         "seo",
         "geo",
@@ -29,6 +29,6 @@
   ],
   "metadata": {
     "description": "Organiq marketplace: one plugin with the skills and the bundled MCP connector.",
-    "version": "0.4.2"
+    "version": "0.5.0"
   }
 }

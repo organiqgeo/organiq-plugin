@@ -16,7 +16,7 @@ Goal: how many sessions AI assistants send to the site, which sources, how it tr
 1. `list_sites`: `hasGa4` must be true for referral data; otherwise only the Search Console part applies.
 2. `get_ai_traffic` `{site, days: 28, compare: "previous"}`: sessions, active users, engaged sessions and key events per source (chatgpt.com, perplexity.ai, gemini, copilot, claude…), totals and a daily series. `site: "all"` aggregates the account.
 3. Trend: compare with `days: 90` and read the daily series for spikes (a single citation can cause one).
-4. Conversational demand in Google: `query_top_queries` `{site, days: 90, query: "/^(como|o que|qual|quanto|por que|how|what|why|which)\\b/", sort: "impressions", limit: 50}` lists question-style queries; `query_top_queries` with `sort: "decline"` over 90 days vs the previous 90 can show queries losing clicks while impressions hold, a pattern consistent with AI Overviews taking the click (Search Console does not separate those clicks, so present it as a hypothesis).
+4. Conversational demand in Google: `query_top_queries` `{site, days: 90, query: "/^(como|o que|qual|quanto|por que|how|what|why|which)\\y/", sort: "impressions", limit: 50}` lists question-style queries; `query_top_queries` with `sort: "decline"` over 90 days vs the previous 90 can show queries losing clicks while impressions hold, a pattern consistent with AI Overviews taking the click (Search Console does not separate those clicks, so present it as a hypothesis).
 5. `get_timeseries` `{site, days: 365, granularity: "month"}` for the long-run CTR trend.
 
 ## Output
